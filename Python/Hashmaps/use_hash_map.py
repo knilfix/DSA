@@ -1,6 +1,7 @@
 from hash_map import HashTable
 import random
 import string
+import time
 
 # Create a larger hash table
 dictionary = HashTable(50)  # Start with capacity 50
@@ -18,6 +19,25 @@ def generate_random_key():
         return random.randint(1, 1000)
     else:  # float
         return round(random.uniform(1.0, 100.0), 2)
+
+
+def bucket_stats(table):
+    lengths = []
+    for bucket in table.bucket_array:
+        count = 0
+        if bucket:
+            current = bucket.head
+            while current:
+                count += 1
+                current = current.next
+        lengths.append(count)
+
+    print("\nBucket chain length distribution:")
+    for i, ln in enumerate(lengths):
+        if ln != 0:
+            print(f"Bucket {i}: {ln}")
+    print(f"Longest chain: {max(lengths)}")
+    print(f"Average chain length: {sum(lengths)/len(lengths):.2f}")
 
 
 def generate_random_value():
@@ -57,6 +77,10 @@ print(f"Load factor: {dictionary.size / dictionary.capacity:.2f}")
 # Print a sample of the table
 print("\nSample of hash table contents:")
 dictionary.print_table()
+
+print("\n=== Bucket Statistics Before Retrieval Tests ===")
+bucket_stats(dictionary)
+
 
 # Test retrieval - verify all inserted data can be retrieved correctly
 print("\nTesting retrieval of all inserted items...")
@@ -109,6 +133,10 @@ print(f"Removed {removal_success} items successfully")
 print(f"New size: {dictionary.size}")
 print(f"New load factor: {dictionary.size / dictionary.capacity:.2f}")
 
+print("\n=== Bucket Statistics After Removals ===")
+bucket_stats(dictionary)
+
+
 # Final verification
 print("\nFinal verification...")
 final_success = 0
@@ -129,9 +157,6 @@ for i in range(20):
         non_existent_test += 1
 
 print(f"Correctly handled {non_existent_test}/20 non-existent keys")
-
-# Performance test - time some operations
-import time
 
 print("\nPerformance test - timing 1000 retrievals...")
 start_time = time.time()

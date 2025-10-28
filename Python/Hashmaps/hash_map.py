@@ -2,7 +2,7 @@ class HashTable:
     """A hash table implementation using separate chaining for collision resolution.
 
     Features:
-    - Dynamic resizing when load factor exceeds 0.8
+    - Dynamic resizing when load factor exceeds 0.75
     - Prime number capacity for better distribution
     - Support for any hashable key type
     - Average O(1) time complexity for operations
@@ -41,7 +41,7 @@ class HashTable:
             existing_entry.value = value
         else:
             # Key doesn't exist - check if we need to rehash before inserting
-            if (self.size + 1) / self.capacity >= 0.8:
+            if (self.size + 1) / self.capacity >= 0.75:
                 self.rehash()  # This replaces bucket_array entirely!
 
                 # After rehash, must re-locate the bucket in the new array
@@ -110,7 +110,7 @@ class HashTable:
         """Resize hash table to next prime number (2x current capacity).
 
         Reinserts all existing key-value pairs into new larger table.
-        This is triggered automatically when load factor exceeds 0.8.
+        This is triggered automatically when load factor exceeds 0.75.
         """
         old_bucket_array = self.bucket_array
         old_capacity = self.capacity
