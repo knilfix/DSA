@@ -71,7 +71,8 @@ class LinkedList:
 
         prev = self.head
         current = self.head.next_node
-        while current is not None:
+
+        while current:
             if current.data == data:
                 prev.next_node = current.next_node
                 current.next_node = None
