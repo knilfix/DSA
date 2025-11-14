@@ -1,5 +1,5 @@
 
-# 🌳 DSA Mastery Roadmap — Phase 1 (11 Weeks)
+# 🌳 DSA Mastery Road map — Phase 1 (11 Weeks)
 
 > Goal: Master core Trees & Graphs for strong problem-solving skills and future systems projects.
 
@@ -12,7 +12,7 @@
 **Theory:**
 
 - Tree terminology (root, leaf, height, depth)
-- Traversals: Preorder, Inorder, Postorder, Level-order
+- Traversals: Pre-order, In-order, Post-order, Level-order
 - Types: Complete, Full, Perfect
 
 **Implementation Checklist (C):**
