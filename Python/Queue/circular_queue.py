@@ -31,9 +31,6 @@ class CircularBuffer:
         return self.size == 0
 
 
-# ... (Your CircularBuffer class code goes here) ...
-
-
 def main():
     # Create a circular buffer of size 3
     cb = CircularBuffer(3)
