@@ -4,7 +4,7 @@ A comprehensive collection of data structures and algorithms implementations in 
 
 ## 📁 Repository Structure
 
-```
+```t
 DSA/
 ├── C/                          # C implementations
 │   ├── LinearDataStructures/
@@ -63,6 +63,7 @@ DSA/
 ## 🎯 Purpose
 
 This repository serves as:
+
 - **Educational Resource**: Learn DSA concepts through practical implementations
 - **Multi-language Reference**: Compare implementations across C and Python
 - **Practice Ground**: Exercises and experimentation space to reinforce learning
@@ -71,8 +72,9 @@ This repository serves as:
 ## 🔬 Learning & Experimentation
 
 ### 🎮 Playground Directory
-The `Python/playground/` directory is your dedicated space for **experimentation and learning**. 
-          
+
+The `Python/playground/` directory is your dedicated space for **experimentation and learning**.
+
 It will be ignored by git as it is in the `.gitignore`
 
 Feel free to:
@@ -84,14 +86,14 @@ Feel free to:
 - Break things and learn from mistakes!
 
 **Why use the playground?**
+
 - ✅ Already in `.gitignore` - your experiments stay local
 - ✅ Safe space to make mistakes without affecting main codebase
 - ✅ Perfect for following tutorials or testing ideas
 - ✅ Encourages hands-on learning
 
+### Study Approach
 
-
-### Study Approach:
 1. **Read the Docs**: Start with theoretical concepts in `Docs/`
 2. **Examine Code**: Study the implementations in your preferred language
 3. **Run Examples**: Execute the code to see data structures in action
@@ -103,12 +105,14 @@ Feel free to:
 The `Docs/` directory contains comprehensive theoretical coverage:
 
 ### Linear Data Structures
+
 - **Arrays**: Dynamic arrays, operations, complexity analysis
 - **Linked Lists**: Singly/doubly linked lists, traversal, applications
 - **Stacks**: LIFO principle, implementations, use cases
 - **Queues**: FIFO principle, circular queues, priority queues
 
 ### Non-Linear Data Structures
+
 - **Trees**: Binary trees, BSTs, traversal algorithms
 - **Heaps**: Min/max heaps, heap operations, applications
 - **Hashmaps**: Hashing techniques, collision resolution
@@ -116,6 +120,7 @@ The `Docs/` directory contains comprehensive theoretical coverage:
 - **Advanced Trees**: Red-Black trees, balancing operations
 
 ### Planning Resources
+
 - **Roadmap**: Learning path and progression guide
 - **Checklist**: Track your learning progress
 - **Projects**: Practical project ideas to apply DSA knowledge
@@ -123,18 +128,21 @@ The `Docs/` directory contains comprehensive theoretical coverage:
 ## 💡 Learning Path Suggestions
 
 ### Beginner Track
+
 1. Start with Linear Data Structures (Arrays → Linked Lists → Stacks → Queues)
 2. Practice with Python implementations first
 3. Use playground for hands-on experimentation
 4. Attempt exercises in each section
 
 ### Intermediate Track
+
 1. Move to Non-Linear Structures (Trees → Heaps → Hashmaps)
 2. Compare C and Python implementations
 3. Study complexity analysis in documentation
 4. Work on suggested projects
 
 ### Advanced Track
+
 1. Explore advanced trees (Red-Black Trees)
 2. Implement graph algorithms
 3. Optimize existing implementations
@@ -142,17 +150,20 @@ The `Docs/` directory contains comprehensive theoretical coverage:
 
 ## 🛠️ Prerequisites
 
-### For C implementations:
+### For C implementations
+
 - GCC compiler
 - Basic C programming knowledge
 
-### For Python implementations:
+### For Python implementations
+
 - Python 3.6+
 - Basic Python programming knowledge
 
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 - Add new data structure implementations
 - Improve existing code with better algorithms
 - Add more exercises or documentation
