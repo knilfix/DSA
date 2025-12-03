@@ -5,59 +5,96 @@ A comprehensive collection of data structures and algorithms implementations in 
 ## 📁 Repository Structure
 
 ```t
-DSA/
-├── C/                          # C implementations
-│   ├── LinearDataStructures/
-│   │   ├── dynamic_arrays.c
-│   │   ├── linked_lists.c
-│   │   ├── queue.c
-│   │   └── stack.c
-│   └── NonLinearDataStructures/
-│       └── Docs/
-├── Python/                     # Python implementations
-│   ├── Linked_List/
-│   │   ├── linked_list.py
-│   │   ├── doubly_linked_list.py
-│   │   └── exercises.md
-│   ├── Stack/
-│   │   ├── stack.py
-│   │   └── exercises.md
-│   ├── Queue/
-│   │   ├── queue.py
-│   │   ├── circular_queue.py
-│   │   └── exercises.md
-│   ├── Hashmaps/
-│   │   ├── hash_map.py
-│   │   └── exercises.md
-│   ├── Heaps/
-│   │   ├── min_heap.py
-│   │   ├── max_heap.py
-│   │   └── exercises.md
-│   ├── Trees/
-│   │   ├── binary_tree.py
-│   │   ├── bfs.py
-│   │   ├── red_black_trees.py
-│   │   └── exercises.md
-│   └── playground/             # 🎯 Your experimentation space!
-└── Docs/                       # Language-agnostic documentation
-    ├── Linear/
-    │   ├── arrays.md
-    │   ├── linked_list.md
-    │   ├── stack.md
-    │   └── queue.md
-    ├── NonLinear/
-    │   ├── trees.md
-    │   ├── binary_tree.md
-    │   ├── binary_search_tree.md
-    │   ├── red_black_tree.md
-    │   ├── graphs.md
-    │   ├── heaps.md
-    │   └── hashmaps.md
-    ├── Planning/
-    │   ├── roadmap.md
-    │   ├── checklist.md
-    │   └── projects.md
-    └── complexity_cheatsheet.md
+├── C                                # C Implementations
+│   ├── LinearDataStructures
+│   │   ├── dynamic_arrays.c
+│   │   ├── linked_lists.c
+│   │   ├── queue.c
+│   │   └── stack.c
+│   └── NonLinearDataStructures
+│       └── Docs
+├── Docs                           # Documentation and Theory
+│   ├── complexity_cheatsheet.md
+│   ├── index.md
+│   ├── Linear
+│   │   ├── arrays
+│   │   │   └── arrays.md
+│   │   ├── linked-lists
+│   │   │   ├── exercises.md
+│   │   │   └── linked_list.md
+│   │   ├── queues
+│   │   │   ├── exercises.md
+│   │   │   └── queue.md
+│   │   └── stack
+│   │       ├── exercises.md
+│   │       └── stack.md
+│   ├── NonLinear
+│   │   ├── graphs
+│   │   │   ├── exercises.md
+│   │   │   └── graphs.md
+│   │   ├── hashmap
+│   │   │   ├── exercises.md
+│   │   │   └── hashmaps.md
+│   │   ├── heaps
+│   │   │   └── heaps.md
+│   │   └── trees
+│   │       ├── binary_search_tree.md
+│   │       ├── binary_tree.md
+│   │       ├── exercises.md
+│   │       ├── red_black_tree.md
+│   │       └── trees.md
+│   ├── Planning
+│   │   ├── checklist.md
+│   │   ├── projects.md
+│   │   └── roadmap.md
+│   └── template.md
+├── Python                     # Python Implementations
+│   ├── Graphs
+│   │   ├── bfs.py
+│   │   ├── dfs.py
+│   │   ├── dijkstra.py
+│   │   ├── FINISHING_PLAN.md
+│   │   ├── graph.py
+│   │   ├── graph_utils.py
+│   │   ├── prims.py
+│   │   ├── test_algorithms.py
+│   │   └── topological_sort.py
+│   ├── Hashmaps
+│   │   └── hash_map.py
+│   ├── Heaps
+│   │   ├── exercises.md
+│   │   ├── max_heap.py
+│   │   └── min_heap.py
+│   ├── Linked_List
+│   │   ├── doubly_linked_list.py
+│   │   └── linked_list.py
+│   ├── Queue
+│   │   ├── array_queue.py
+│   │   ├── circular_queue.py
+│   │   ├── linked_list_queue.py
+│   │   ├── main.py
+│   │   ├── __pycache__
+│   │   │   ├── array_queue.cpython-313.pyc
+│   │   │   ├── circular_queue.cpython-313.pyc
+│   │   │   └── linked_list_queue.cpython-313.pyc
+│   │   └── queue_adt.py
+│   ├── Stack
+│   │   └── stack.py
+│   └── Trees
+│       ├── bfs.py
+│       ├── binary_tree.py
+│       ├── b-trees
+│       │   ├── bst_database.py
+│       │   ├── b_tree_database.py
+│       │   ├── btree_index.json
+│       │   ├── database_tester.py
+│       │   ├── file_utils.py
+│       │   ├── generate_data.py
+│       │   ├── hashmap_database.py
+│       │   └── linear_database.py
+│       └── red_black_trees.py
+└── README.md
+                                          
 ```
 
 ## 🎯 Purpose
