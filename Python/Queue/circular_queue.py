@@ -30,6 +30,17 @@ class CircularBuffer:
     def is_empty(self):
         return self.size == 0
 
+    def peek(self):
+        return self.buffer[-1]
+
+    def print_queue(self):
+        items = []
+        idx = self.head
+        for _ in range(self.size):
+            items.append(self.buffer[idx])
+            idx = (idx + 1) % self.capacity
+        print(items)
+
 
 def main():
     # Create a circular buffer of size 3

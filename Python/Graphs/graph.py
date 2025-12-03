@@ -21,7 +21,6 @@ class Graph:
             self.graph[dest].append(src)
 
     def get_neighbors(self, vertex: str) -> list[str]:
-
         if vertex not in self.graph.keys():
             return []
 
@@ -89,6 +88,7 @@ class Graph:
             return True
         else:
             return False
+
 
     def print_graph(self):
         """Print the graph in a clean, readable format"""
