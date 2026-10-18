@@ -132,7 +132,7 @@ class Btree:
         node, index = self.root.search(key)
         if node is None:
             return None
-        return node.values[index]
+        return node.keys[index]
 
     def traverse(self):
         if self.root is not None:
@@ -161,5 +161,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-main()
